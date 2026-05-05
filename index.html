@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Counter2</title>
-    <meta name="description" content="カウンターアプリ（増減・リセット機能付き）" />
+    <meta
+      name="description"
+      content="カウンターアプリ（増減・リセット機能付き）"
+    />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,14 +19,16 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
-
     <div class="counter">
       <div class="counter-number" id="js-counter">0</div>
-      <button type="button" class="button js-button">-</button>
-      <button type="button" class="button js-button">+</button>
+
+      <button type="button" class="button js-button" data-delta="-10">-10</button>
+      <button type="button" class="button js-button" data-delta="-1">-</button>
+      <button type="button" class="button js-button" data-delta="1">+</button>
+      <button type="button" class="button js-button" data-delta="10">+10</button>
+
       <button type="button" class="button" id="js-reset-button">Reset</button>
     </div>
-
 
     <script src="./assets/js/counter2.js"></script>
     <script src="./assets/js/reset.js"></script>
