@@ -1,4 +1,10 @@
-/* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-particlesJS.load('particles-js', 'assets/js/particles.json', function() {
-  console.log('callback - particles.js config loaded');
-});
+((() => {
+    const $counter = document.getElementById('js-counter');
+
+    const clickHandler = (e) => {
+        $counter.textContent = 0;
+    };
+
+    document.getElementById('js-reset-button')
+        .addEventListener('click', (e) => clickHandler(e));
+})());
